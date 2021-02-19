@@ -11,13 +11,17 @@ export default {
 
 const Template: Story<HeaderProps> = (args) => <Provider store={store}><Header {...args} /></Provider>;
 
-export const StaticTitle = Template.bind({});
-StaticTitle.argTypes = {title: {control: false}};
+export const StaticValues = Template.bind({});
+StaticValues.argTypes = {title: {control: false}, BarColor: {control: false}, BarBackground: {control: false}, bodyColor: {control: false}, bodyBackground: {control: false} };
 
-export const DefaultTitle = Template.bind({});
-DefaultTitle.argTypes = {title: {control: false}};
-DefaultTitle.args = {
-    title: 'TaskBox'
+export const DefaultValues = Template.bind({});
+DefaultValues.argTypes = {title: {control: false}, BarColor: {control: false}, BarBackground: {control: false}, bodyColor: {control: false}, bodyBackground: {control: false} };
+DefaultValues.args = {
+    title: 'TaskBox',
+    BarColor: 'white',
+    BarBackground: 'red',
+    bodyColor: 'white',
+    bodyBackground: 'black'
 };
 
 export const DynamicTitle = Template.bind({});
