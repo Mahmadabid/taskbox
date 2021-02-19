@@ -42,10 +42,10 @@ export default function AddTask() {
     const [title, setTitle] = React.useState('');
     
     var objToday = new Date(),
-	weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'),
+	weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
 	dayOfWeek = weekday[objToday.getDay()],
 	dayOfMonth = objToday.getDate(),
-	months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'),
+	months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 	curMonth = months[objToday.getMonth()],
 	curYear = objToday.getFullYear(),
     curHour = objToday.getHours() > 12 ? objToday.getHours() - 12 : (objToday.getHours() < 10 ? "0" + objToday.getHours() : objToday.getHours()),

@@ -14,8 +14,8 @@ export interface Tasks {
 export interface TaskItem {
     id: string
     title: string
-    state: string
-    date: TaskState
+    state: TaskState
+    date: string
 }
 
 export enum TaskState {

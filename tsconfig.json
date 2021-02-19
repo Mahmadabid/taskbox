@@ -21,6 +21,7 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "../../taskbox/AddTask.stories.tsx"
   ]
 }

@@ -1,23 +1,24 @@
-import React from "react";
-import { store } from "../Global/store";
+import React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import Header, { HeaderProps } from '../Components/Header/Header';
 import { Provider } from 'react-redux';
-import { withKnobs, text } from '@storybook/addon-knobs';
-import Header from "../Components/Header/Header";
+import { store } from '../Global/store';
 
 export default {
     title: "Header",
     component: Header,
-    decorators: [withKnobs]
-}
+} as Meta;
 
-export const HeaderWithStaticTitle = () => {
-    return <Provider store={store} ><Header /></Provider>
-}
+const Template: Story<HeaderProps> = (args) => <Provider store={store}><Header {...args} /></Provider>;
 
-export const HeaderWithDefaultTitle = () => {
-    return <Provider store={store} ><Header title="TaskBox"/></Provider>
-}
+export const StaticTitle = Template.bind({});
+StaticTitle.argTypes = {title: {control: false}};
 
-export const HeaderWithDynamicTitle = () => {
-    return <Provider store={store} ><Header title={text('Initial Value', "")} /></Provider>
-}
+export const DefaultTitle = Template.bind({});
+DefaultTitle.argTypes = {title: {control: false}};
+DefaultTitle.args = {
+    title: 'TaskBox'
+};
+
+export const DynamicTitle = Template.bind({});
+DynamicTitle.args ={};

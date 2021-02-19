@@ -22,11 +22,11 @@ const TaskSlice = createSlice({
         remove: (state, action) => {
             return {
                 ...state,
-                tasks: state.tasks.filter(task => task.id !== action.payload.id)
+                tasks: state.tasks.filter((task: { id: string; }) => task.id !== action.payload.id)
             }
         },
         pin: (state, action) => {
-            state.tasks.forEach((task) => {
+            state.tasks.forEach((task: { id: string; state: TaskState; }) => {
                 if (task.id === action.payload.id) {
                     if (task.state !== TaskState.pinned) { 
                         task.state = TaskState.pinned

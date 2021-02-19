@@ -8,14 +8,14 @@ import Favorite from '@material-ui/icons/Favorite';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 import { TaskState } from '../../Global/Types/SliceTypes';
 
-interface Props {
+export interface TaskProps {
     title: string
     id: string
     date: string
     state: TaskState
 }
 
-export const Task: React.FC<Props> = ({ title, id, date, state }) => {
+export const Task: React.FC<TaskProps> = ({ title, id, date, state }) => {
     const dispatch = useDispatch();
     const [check, setCheck] = useState(false);
     useEffect(() => {

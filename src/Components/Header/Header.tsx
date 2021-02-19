@@ -30,11 +30,11 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-interface Props {
+export interface HeaderProps {
   title?: string;
 }
 
-const Header: React.FC<Props> = ({title}) => {
+const Header: React.FC<HeaderProps> = ({title}) => {
   const classes = useStyles();
   const dispatch = useDispatch();
   const islit = useSelector((state: State) => state.themes.value );
