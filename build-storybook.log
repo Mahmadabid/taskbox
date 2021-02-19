@@ -1,0 +1,84 @@
+Watching D:\DATA SCIENCE\info\New folder\Repos\taskbox and all sub-directories not excluded by your .gitignore. Will not monitor dotfiles.
+Found & ignored ./node_modules ; is listed in .gitignore
+Found & ignored ./src\App.css ; has ignored extension
+Found & ignored ./src\index.css ; has ignored extension
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+internal/modules/cjs/loader.js:883
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\DATA SCIENCE\info\New folder\Repos\taskbox\build-storybook'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+./storybook-static\favicon.ico changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./storybook-static\manifest.json changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./storybook-static\logo512.png changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./storybook-static\robots.txt changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./storybook-static\logo192.png changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./build-storybook.log changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./storybook-static\favicon.ico changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./storybook-static\logo512.png changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./storybook-static\logo192.png changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./storybook-static\favicon.ico changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./storybook-static\robots.txt changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./storybook-static\manifest.json changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+./storybook-static\favicon.ico changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+internal/modules/cjs/loader.js:883
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\DATA SCIENCE\info\New folder\Repos\taskbox\build-storybook'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+./build-storybook.log changed
+
+Starting: build-storybook -- --output-dir C:\Users\Sajid\AppData\Local\Temp\chromatic--8012-VfnTPUjV44tv
+internal/modules/cjs/loader.js:883
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\DATA SCIENCE\info\New folder\Repos\taskbox\build-storybook'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
