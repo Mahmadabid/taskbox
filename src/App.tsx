@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header/Header';
+import AddTask from './Components/TaskBox/AddTask';
+import TaskBox from './Components/TaskBox/TaskBox';
+import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { useSelector } from 'react-redux';
+import { State } from './Global/Types/SliceTypes';
 
 function App() {
+
+  const islit = useSelector((state: State) => state.themes.value);
+
+  const theme = createMuiTheme({
+    palette: {
+      type: islit ? "light" : "dark",
+    },
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header title="TaskBox" />
+      <ThemeProvider theme={theme}>
+        <div className="App">
+          <AddTask />
+          <TaskBox />
+        </div>
+      </ThemeProvider>
     </div>
   );
 }
