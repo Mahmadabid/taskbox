@@ -10,16 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setTheme } from '../../Global/Slice/ThemeSlice';
 import { State } from '../../Global/Types/SliceTypes';
 
-export interface HeaderProps {
-  title?: string;
-  BarColor?: string;
-  BarBackground?: string;
-  bodyColor?: string;
-  bodyBackground?: string;
-}
-
-const Header: React.FC<HeaderProps> = ({title, BarColor, BarBackground, bodyColor, bodyBackground}) => {
-  const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       flexGrow: 1,
@@ -30,15 +21,20 @@ const Header: React.FC<HeaderProps> = ({title, BarColor, BarBackground, bodyColo
       textAlign: 'center',
     },
     appBar: {
-      backgroundColor: BarBackground? BarBackground: 'hsl(227deg 22% 20%)',
-      color: BarColor? BarColor: 'white',
+      backgroundColor: 'hsl(227deg 22% 20%)',
     },
     body: {
-      backgroundColor: bodyBackground? bodyBackground: 'hsl(226, 23%, 11%)',
-      color: bodyColor? bodyColor: 'white',
+      backgroundColor: 'hsl(226, 23%, 11%)',
+      color: 'white',
     },
   }),
 );
+
+export interface HeaderProps {
+  title?: string;
+}
+
+const Header: React.FC<HeaderProps> = ({title}) => {
   const classes = useStyles();
   const dispatch = useDispatch();
   const islit = useSelector((state: State) => state.themes.value );
